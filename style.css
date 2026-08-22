@@ -1,0 +1,78 @@
+/* =========================================================
+   SmartJobs — Core Design System
+   Keep this file as the single source of truth for colors,
+   spacing and typography so every page looks consistent.
+========================================================= */
+
+:root {
+  --sj-primary: #2563eb;      /* main brand blue */
+  --sj-primary-dark: #1d4ed8;
+  --sj-secondary: #64748b;    /* muted gray-blue for text */
+  --sj-bg-light: #f8fafc;
+  --sj-border-radius: 10px;
+  --sj-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+  --sj-font: "Poppins", sans-serif;
+}
+
+body {
+  font-family: var(--sj-font);
+  color: #1e293b;
+  background-color: #ffffff;
+}
+
+/* Override Bootstrap's default primary color with our brand blue */
+.btn-primary {
+  background-color: var(--sj-primary);
+  border-color: var(--sj-primary);
+  border-radius: var(--sj-border-radius);
+}
+.btn-primary:hover {
+  background-color: var(--sj-primary-dark);
+  border-color: var(--sj-primary-dark);
+}
+.btn-outline-primary {
+  color: var(--sj-primary);
+  border-color: var(--sj-primary);
+  border-radius: var(--sj-border-radius);
+}
+.btn-outline-primary:hover {
+  background-color: var(--sj-primary);
+  border-color: var(--sj-primary);
+}
+.text-primary {
+  color: var(--sj-primary) !important;
+}
+
+/* ===================== NAVBAR ===================== */
+.navbar-brand {
+  color: #1e293b;
+}
+.nav-link {
+  font-weight: 500;
+  color: #334155 !important;
+  margin: 0 8px;
+}
+.nav-link.active,
+.nav-link:hover {
+  color: var(--sj-primary) !important;
+}
+
+/* ===================== HERO ===================== */
+.hero-section {
+  background: linear-gradient(180deg, #eff6ff 0%, #ffffff 100%);
+}
+
+.hero-placeholder {
+  width: 260px;
+  height: 260px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-color: #dbeafe;
+}
+
+/* ===================== SHARED CARD STYLE (used from Day 2 onward) ===================== */
+.card {
+  border: none;
+  border-radius: var(--sj-border-radius);
+  box-shadow: var(--sj-shadow);
+}
