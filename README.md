@@ -64,3 +64,4 @@ FSD Project/
 
 └── README.md
 
+CI workflow verified successfully.
