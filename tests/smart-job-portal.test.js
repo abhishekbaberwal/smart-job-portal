@@ -10,7 +10,7 @@ describe("Smart Job Portal", () => {
       "utf8"
     );
 
-    expect(html).toContain("SmartJobs");
+    expect(html).toContain("WrongProjectName");
   });
 
   test("jobs page should exist and contain job-related content", () => {
