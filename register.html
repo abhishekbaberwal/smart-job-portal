@@ -13,15 +13,41 @@
 </head>
 <body>
 
+  <!-- ===================== NAVBAR ===================== -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top py-3">
+    <div class="container">
+      <a class="navbar-brand fw-bold fs-4" href="index.html">
+        <i class="bi bi-briefcase-fill text-primary me-1"></i>Smart<span class="text-primary">Jobs</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav mx-auto text-center">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="jobs.html">Jobs</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+        <div class="d-flex gap-2 mt-3 mt-lg-0 justify-content-center">
+          <a href="login.html" class="btn btn-outline-primary">Login</a>
+          <a href="register.html" class="btn btn-primary">Register</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===================== REGISTER SECTION ===================== -->
   <section class="py-5 bg-light-section">
     <div class="container">
       <div class="card auth-card p-4 p-md-5">
-        
         <div class="text-center mb-4">
           <i class="bi bi-briefcase-fill text-primary fs-2"></i>
           <h3 class="fw-bold mt-2 mb-1">Create Your Account</h3>
           <p class="text-secondary small mb-0">Join SmartJobs and find your first opportunity</p>
         </div>
+
+        <!-- Validation is not wired up with JS yet — HTML5 'required' attributes only for now -->
         <form id="registerForm" onsubmit="return false;" novalidate>
 
           <div class="mb-3">
@@ -88,6 +114,8 @@
       </div>
     </div>
   </section>
+
+  <!-- ===================== FOOTER ===================== -->
   <footer class="pt-5 pb-4">
     <div class="container">
       <div class="row g-4">
@@ -122,8 +150,8 @@
         <div class="col-md-3">
           <h6 class="fw-semibold mb-3">Contact</h6>
           <ul class="list-unstyled small text-secondary">
-            <li class="mb-2"><i class="bi bi-envelope me-2"></i>khandelwalabhishek464@gmail.com</li>
-            <li class="mb-2"><i class="bi bi-telephone me-2"></i>+91 1234567890</li>
+            <li class="mb-2"><i class="bi bi-envelope me-2"></i>support@smartjobs.com</li>
+            <li class="mb-2"><i class="bi bi-telephone me-2"></i>+91 98765 43210</li>
             <li class="mb-2"><i class="bi bi-geo-alt me-2"></i>Jaipur, Rajasthan, India</li>
           </ul>
         </div>
